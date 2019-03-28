@@ -9,7 +9,7 @@ class Modal {
         this.domoNewCard.style.display = 'block';
         this.cancelNewDomo.addEventListener('click', e => {
             e.preventDefault();
-            this.closeModal()git p;
+            this.closeModal();
         })
     }
 
