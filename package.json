@@ -19,7 +19,7 @@
     "stylelint-selector-bem-pattern": "^2.0.0"
   },
   "dependencies": {
-    "bootstrap": "4.2.1",
+    "bootstrap": ">=4.3.1",
     "jquery": "^3.3.1"
   },
   "scripts": {
