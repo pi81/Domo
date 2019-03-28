@@ -17,4 +17,7 @@ Thumbs.db
 
 ## Development
 node_modules
-public/
+
+public/main\.js
+
+public/main\.css
