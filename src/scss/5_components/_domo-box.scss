@@ -1,0 +1,65 @@
+$box-size-small: 320px;
+$box-size-large: 380px;
+$box-size: 280px;
+
+.domo-box {
+
+  position: relative;
+  height: $box-size;
+  width: 100%;
+  background-image: url("https://via.placeholder.com/380/ead7e5/330f33");
+  @include background(cover);
+  cursor: pointer;
+  //@include rwd(smobile) {
+  //  //width: $box-size-small;
+  //  background-image: url("https://via.placeholder.com/380/ead7e5/330f33");
+  //}
+  //@include rwd(small) {
+  //  width: $box-size-large;
+  //  background-image: url("https://via.placeholder.com/380x280/ead7e5/330f33");
+  //}
+  //@include rwd(medium) {
+  //  width: $box-size-small;
+  //  background-image: url("https://via.placeholder.com/320x280/ead7e5/330f33");
+  //}
+  //@include rwd(large) {
+  //  width: $box-size;
+  //  background-image: url("https://via.placeholder.com/280/ead7e5/330f33");
+  //}
+
+  &__name {
+    position: absolute;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #330f33;
+    width: 100%;
+    bottom: - .8rem;
+  }
+}
+
+.domo-new {
+  width: $box-size;
+  height: $box-size;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #59a13e;
+  font-size: 100px;
+
+  &:before {
+    content: "";
+    display: block;
+    background: url(../../icons/plus-circle.svg);
+    width: 100px;
+    height: 100px;
+    @include background(100%);
+    transition: transform .3s;
+  }
+
+  &:hover:before {
+    transform: scale(1.2, 1.2);
+  }
+
+}
+

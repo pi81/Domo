@@ -1,0 +1,21 @@
+.grid {
+  @extend .row;
+  margin: 100px 0;
+  justify-items: center;
+  row-gap: $space;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  @include rwd(tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include rwd(medium) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

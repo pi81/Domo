@@ -1,18 +1,33 @@
-@mixin container() {
+@mixin container($size: $content-width, $padding: $space) {
   box-sizing: border-box;
-  padding-left: $space;
-  padding-right: $space;
+  padding-left: $padding;
+  padding-right: $padding;
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
   @include rwd(large) {
-    max-width: $content-width;
+    max-width: $size;
   }
 }
 
 .col-lg-6 {
   display: flex;
   margin: 0 auto;
+}
+
+.container-fluid {
+  @include container($content-width-full)
+}
+
+.container-wide {
+  @include container($content-width-wide, 15px);
+  @include rwd(small) {
+    @include container($content-width-wide);
+  }
+}
+
+.container-std {
+  @include container()
 }
 
 .row {
