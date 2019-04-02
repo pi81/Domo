@@ -1,9 +1,7 @@
 $__iconfont__data: map-merge(if(global_variable_exists('__iconfont__data'), $__iconfont__data, ()), (
 	"iconfont": (
-		"chevron-circle-left": "\ea01",
-		"chevron-circle-right": "\ea02",
-		"diamond": "\ea03",
-		"plus-circle": "\ea04"
+		"diamond": "\ea01",
+		"plus-circle": "\ea02"
 	)
 ));
 
