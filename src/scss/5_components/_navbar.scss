@@ -1,0 +1,12 @@
+.navbar{
+  @extend .row;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  padding: 1rem 0;
+
+  //&__logo{
+  //  width: 120px;
+  //  height: 80px;
+  //  background: #ccc;
+  //}
+}
