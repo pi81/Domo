@@ -1,0 +1,62 @@
+.single-box {
+  position: relative;
+  height: 480px;
+  width: 480px;
+  max-width: 100%;
+  margin: 100px auto;
+
+  &__add-new {
+    @include add-btn(70px);
+    margin: 50px 0;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    @include rwd(tablet) {
+      position: absolute;
+      display: inline;
+      top: -60px;
+      right: -140px;
+      margin: 0;
+    }
+  }
+
+  &__casing {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav {
+    display: none;
+    font-family: iconfont;
+    font-size: 50px;
+    cursor: pointer;
+    padding: .5rem 2rem;
+
+    &:before {
+      transition: color .3s;
+      color: #ccc;
+    }
+
+    &:hover {
+      &:before {
+        color: #59a13e;
+      }
+    }
+  }
+
+  @include rwd(small) {
+    &__nav {
+      display: inline;
+    }
+  }
+
+  &__nav--prev:before {
+    content: "\ea01";
+
+  }
+
+  &__nav--next:before {
+    content: "\ea02";
+  }
+}

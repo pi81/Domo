@@ -64,3 +64,18 @@ Retina
   background-size: $size;
 }
 
+@mixin add-btn($size){
+  &:before {
+    content: "\ea04";
+    font-family: iconfont;
+    display: block;
+    font-size: $size;
+    color: #59a13e;
+    transition: transform .3s;
+    cursor: pointer;
+  }
+
+  &:hover:before {
+    transform: scale(1.2, 1.2);
+  }
+}
