@@ -2,12 +2,18 @@
 $box-size: 300px;
 $translate: $box-size / 2;
 $margin: $box-size / 3.5;
+$background-side: #f4d44d;
+$background-front: #dcb922;
+$background-dark: #c6a81a;
+$background-left: #d0b01f;
+$background-right: #e5c51d;
+
 
 .side {
     width: $box-size;
     height: $box-size;
     position: absolute;
-    background: #f4d44d;
+    background: $background-side;
     cursor: pointer;
     user-select: none;
 }
@@ -37,7 +43,7 @@ $margin: $box-size / 3.5;
 
 .front{
     transform: translateZ($translate);
-    background: #dcb922;
+    background: $background-front;
 }
 
 .top{
@@ -46,40 +52,40 @@ $margin: $box-size / 3.5;
 .bottom1{
     transform: translateY($translate) rotateX(90deg) rotateY(0deg);
     width: $translate;
-    background: #c6a81a;
+    background: $background-dark;
     transform-origin: left;
 }
 .bottom2{
     transform: translateY($translate) translateX($translate) rotateX(90deg) rotateY(0deg);
     width: $translate;
-    background: #c6a81a;
+    background: $background-dark;
     transform-origin: right;
 }
 .bottom3{
     transform: translateY($translate) translateZ($translate) rotateX(90deg);
     height: $translate;
-    background: #c6a81a;
+    background: $background-dark;
     transform-origin: bottom;
 }
 .bottom4{
     transform: translateY($box-size) translateZ(-$translate) rotateX(90deg);
     height: $translate;
-    background: #c6a81a;
+    background: $background-dark;
     transform-origin: top;
 }
 .open{
-    background: #c6a81a;
+    background: $background-dark;
 }
 .back{
     transform: translateZ(-$translate);
 }
 .left{
     transform: translateX(-$translate) rotateY(90deg);
-    background: #d0b01f;
+    background: $background-left;
 }
 .right{
     transform: translateX($translate) rotateY(90deg);
-    background: #e5c51d;
+    background: $background-right;
 }
 
 .box.active {
