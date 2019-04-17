@@ -41,9 +41,9 @@ $box-size: 280px;
   &__emoji:after {
     content: attr(data-counter);
     position: absolute;
-    color: #444444;
-    background: #ffffff;
-    border: 1px solid #bbbbbb;
+    color: #ffffff;
+    background: red;
+    border: 0px solid red;
     border-radius: 100%;
     right: 0;
     bottom: -5px;
@@ -51,6 +51,7 @@ $box-size: 280px;
     height: 1.5em;
     text-align: center;
     font-size: 0.75em;
+    font-weight: bold;
   }
 
   &--large {
