@@ -10,6 +10,7 @@ $box-size: 280px;
   background-image: url("https://via.placeholder.com/380/ead7e5/330f33");
   @include background(cover);
   cursor: pointer;
+  display: block;
 
   &__name {
     position: absolute;
