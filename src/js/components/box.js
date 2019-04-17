@@ -10,7 +10,11 @@ class Box {
     events() {
         this.box.addEventListener('click', ((e) => {
             e.preventDefault();
-            this.openBox();
+            if (this.box.classList.contains('active')) {
+                window.location = this.box.href;
+            } else {
+                this.openBox();
+            }
         }));
     }
 
