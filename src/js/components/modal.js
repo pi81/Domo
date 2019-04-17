@@ -7,10 +7,10 @@ class Modal {
 
     openModal() {
         this.domoNewCard.style.display = 'block';
-        this.cancelNewDomo.addEventListener('click', e => {
+        this.cancelNewDomo.addEventListener('click', (e) => {
             e.preventDefault();
             this.closeModal();
-        })
+        });
     }
 
     closeModal() {
@@ -18,11 +18,10 @@ class Modal {
     }
 
     events() {
-        console.log('test423');
-        this.btnNewDomo.addEventListener('click', e => {
+        this.btnNewDomo.addEventListener('click', (e) => {
             e.preventDefault();
             this.openModal();
-        })
+        });
     }
 
     init() {
