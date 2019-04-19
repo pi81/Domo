@@ -1,0 +1,72 @@
+[
+    {
+      "id": 1,
+      "id_emoji": 1,
+      "receiver": "Courtney",
+      "sender": "Miriam",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet at purus quis consectetur. Vestibulum feugiat metus posuere vehicula faucibus. Aliquam laoreet diam quis arcu ornare tristique. Aliquam nec dapibus sapien. Mauris dignissim orci metus, non pretium metus efficitur sed. In hac habitasse platea dictumst."
+    },
+    {
+      "id": 2,
+      "id_emoji": 2,
+      "receiver": "Marc",
+      "sender": "Rhonda",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet at purus quis consectetur. Vestibulum feugiat metus posuere vehicula faucibus. Aliquam laoreet diam quis arcu ornare tristique. Aliquam nec dapibus sapien. Mauris dignissim orci metus, non pretium metus efficitur sed. In hac habitasse platea dictumst."
+    },
+    {
+      "id": 3,
+      "id_emoji": 3,
+      "receiver": "Gayle",
+      "sender": "Judith",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet at purus quis consectetur. Vestibulum feugiat metus posuere vehicula faucibus. Aliquam laoreet diam quis arcu ornare tristique. Aliquam nec dapibus sapien. Mauris dignissim orci metus, non pretium metus efficitur sed. In hac habitasse platea dictumst."
+    },
+    {
+      "id": 4,
+      "id_emoji": 4,
+      "receiver": "Michelle",
+      "sender": "Hannah",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet at purus quis consectetur. Vestibulum feugiat metus posuere vehicula faucibus. Aliquam laoreet diam quis arcu ornare tristique. Aliquam nec dapibus sapien. Mauris dignissim orci metus, non pretium metus efficitur sed. In hac habitasse platea dictumst."
+    },
+    {
+      "id": 5,
+      "id_emoji": 5,
+      "receiver": "Audrey",
+      "sender": "Juan",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet at purus quis consectetur. Vestibulum feugiat metus posuere vehicula faucibus. Aliquam laoreet diam quis arcu ornare tristique. Aliquam nec dapibus sapien. Mauris dignissim orci metus, non pretium metus efficitur sed. In hac habitasse platea dictumst."
+    },
+    {
+      "id": 6,
+      "id_emoji": 6,
+      "receiver": "Oscar",
+      "sender": "Teresa",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet at purus quis consectetur. Vestibulum feugiat metus posuere vehicula faucibus. Aliquam laoreet diam quis arcu ornare tristique. Aliquam nec dapibus sapien. Mauris dignissim orci metus, non pretium metus efficitur sed. In hac habitasse platea dictumst."
+    },
+    {
+      "id": 7,
+      "id_emoji": 7,
+      "receiver": "Norman",
+      "sender": "Emma",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet at purus quis consectetur. Vestibulum feugiat metus posuere vehicula faucibus. Aliquam laoreet diam quis arcu ornare tristique. Aliquam nec dapibus sapien. Mauris dignissim orci metus, non pretium metus efficitur sed. In hac habitasse platea dictumst."
+    },
+    {
+      "id": 8,
+      "id_emoji": 8,
+      "receiver": "Dana",
+      "sender": "Hazel",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet at purus quis consectetur. Vestibulum feugiat metus posuere vehicula faucibus. Aliquam laoreet diam quis arcu ornare tristique. Aliquam nec dapibus sapien. Mauris dignissim orci metus, non pretium metus efficitur sed. In hac habitasse platea dictumst."
+    },
+    {
+      "id": 9,
+      "id_emoji": 9,
+      "receiver": "Dean",
+      "sender": "Jill",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet at purus quis consectetur. Vestibulum feugiat metus posuere vehicula faucibus. Aliquam laoreet diam quis arcu ornare tristique. Aliquam nec dapibus sapien. Mauris dignissim orci metus, non pretium metus efficitur sed. In hac habitasse platea dictumst."
+    },
+    {
+      "id": 10,
+      "id_emoji": 10,
+      "receiver": "Edwin",
+      "sender": "Louise",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce laoreet at purus quis consectetur. Vestibulum feugiat metus posuere vehicula faucibus. Aliquam laoreet diam quis arcu ornare tristique. Aliquam nec dapibus sapien. Mauris dignissim orci metus, non pretium metus efficitur sed. In hac habitasse platea dictumst."
+    }
+  ]
