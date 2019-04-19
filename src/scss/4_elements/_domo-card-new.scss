@@ -1,4 +1,4 @@
-#domo-card__new {
+.domo-card__new {
   max-width: 600px;
   background-color: $color-gray;
   padding: 25px;
@@ -20,11 +20,23 @@
   //background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-#domo-card__new--to {
+.domo-card__new--list {
+  display: block;
+  position: relative;
+  top: auto;
+  left: auto;
+  min-width: 600px;
+}
+
+.domo-card__new--list .domo-card__new--form-group:nth-child(4) {
+  margin-bottom: -5px;
+}
+
+.domo-card__new--to {
   display: inline-block;
 }
 
-#domo-card__new--from {
+.domo-card__new--from {
   display: inline-block;
 }
 
@@ -77,10 +89,10 @@
   display: flex;
 }
 
-.emoticon {
+.domo-card__new--emoticon {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 25px;
+  top: 25px;
 }
 
 .emoticon--image {

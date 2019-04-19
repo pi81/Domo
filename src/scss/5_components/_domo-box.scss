@@ -73,3 +73,8 @@ $box-size: 280px;
   @include add-btn(120px);
 }
 
+.domo-card__new--list .domo-box {
+  &__emoji:after {
+    display: none;
+  }
+}
