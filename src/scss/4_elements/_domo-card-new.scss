@@ -49,6 +49,11 @@
 .domo-card__new--form-group {
   width: 100%;
   margin-bottom: 15px;
+
+  label + p {
+    display: inline-block;
+    margin: 0;
+  }
 }
 
 .domo-card__new--form-group label {
