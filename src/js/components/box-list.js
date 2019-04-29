@@ -6,15 +6,15 @@ class BoxList {
     }
 
     createBox(boxTitle) {
-        let item = document.createElement('a');
+        const item = document.createElement('a');
         item.classList.add('grid__item');
         item.href = '/single-box.html';
 
-        let domoBox = document.createElement('div');
+        const domoBox = document.createElement('div');
         domoBox.classList.add('domo-box');
         item.appendChild(domoBox);
 
-        let domoName = document.createElement('h3');
+        const domoName = document.createElement('h3');
         domoName.classList.add('domo-box__name');
         domoBox.appendChild(domoName);
         domoName.innerText += boxTitle;
@@ -30,14 +30,13 @@ class BoxList {
 
     fetch() {
         fetch(this.boxes)
-            .then(response => {
+            .then((response) => {
                 if (response.ok) {
                     return response.json();
-                } else {
-                    throw new Error();
                 }
+                throw new Error();
             })
-            .then(response => {
+            .then((response) => {
                 this.cardsObj = response;
                 this.generateListBox(this.cardsObj);
             })
