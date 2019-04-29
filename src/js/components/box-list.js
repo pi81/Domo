@@ -2,7 +2,7 @@ class BoxList {
     constructor(boxList) {
         this.boxList = boxList;
         this.boxes = './json/boxes.json';
-        this.cardsObj; // empty array for json
+        this.cardsObj = {}; // empty array for json
     }
 
     createBox(boxTitle) {
