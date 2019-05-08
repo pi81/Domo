@@ -1,0 +1,107 @@
+@mixin container($size: $content-width, $padding: $space) {
+  box-sizing: border-box;
+  padding-left: $padding;
+  padding-right: $padding;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  @include rwd(large) {
+    max-width: $size;
+  }
+}
+
+.col-lg-6 {
+  display: flex;
+  margin: 0 auto;
+}
+
+.container-fluid {
+  @include container($content-width-full)
+}
+
+.container-wide {
+  @include container($content-width-wide, 15px);
+  @include rwd(small) {
+    @include container($content-width-wide);
+  }
+}
+
+.container-std {
+  @include container()
+}
+
+.row {
+  display: flex; // IE11
+  flex-wrap: wrap; // IE11
+  display: grid;
+  grid-row-gap: $space-half;
+  //grid-template-columns: 1fr 1fr;
+  //grid-template-rows: 1fr 1fr;
+  //grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+
+  @include rwd(small) {
+    &.columns-1 {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &.columns-2 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &.columns-3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &.columns-4 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    &.columns-5 {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    &.columns-6 {
+      grid-template-columns: repeat(6, 1fr);
+    }
+    &.columns-7 {
+      grid-template-columns: repeat(7, 1fr);
+    }
+    &.columns-8 {
+      grid-template-columns: repeat(8, 1fr);
+    }
+    &.columns-9 {
+      grid-template-columns: repeat(9, 1fr);
+    }
+    &.columns-10 {
+      grid-template-columns: repeat(10, 1fr);
+    }
+  }
+
+  @extend %column-gap;
+
+  @include rwd(small) {
+    &.row-gap-none {
+      row-gap: 0;
+    }
+    &.row-gap-xsmall {
+      row-gap: $space-one-fourth;
+    }
+    &.row-gap-small {
+      row-gap: $space-half;
+    }
+    &.row-gap-medium {
+      row-gap: $space;
+    }
+    &.row-gap-large {
+      row-gap: $space-double;
+    }
+    &.row-gap-xlarge {
+      row-gap: $space-triple;
+    }
+    &.row-gap-xxlarge {
+      row-gap: $space-quadruple;
+    }
+  }
+
+  &.fullheight {
+    height: 100%; // IE11 (TODO: Find another work arround due to issue when window is below height of content)
+    min-height: 100%;
+  }
+}
+
+

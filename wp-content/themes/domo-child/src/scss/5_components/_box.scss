@@ -1,0 +1,144 @@
+/**BOX**/
+$box-size: 300px;
+$translate: $box-size / 2;
+$margin: $box-size / 3.5;
+
+$background-side: #f4d44d;
+$background-front: #dcb922;
+$background-dark: #c6a81a;
+$background-left: #d0b01f;
+$background-right: #e5c51d;
+
+.side {
+    width: $box-size;
+    height: $box-size;
+    position: absolute;
+    background: $background-side;
+    cursor: pointer;
+    user-select: none;
+}
+
+.box-wrapper {
+    transform: rotateZ(0deg);
+    margin-top: 110px;
+
+  & + .domo-box__name {
+    transform: skewY(10deg) translate(-85px);
+  }
+}
+
+.box-wrapper--moving {
+    animation: movebox 5s linear alternate infinite;
+}
+
+.box {
+    position: relative;
+    transform-style: preserve-3d;
+    display: block;
+    transform: rotateX(160deg) rotateY(120deg);
+    width: $box-size;
+    height: $box-size;
+    margin-left: $margin;
+}
+
+.front{
+    transform: translateZ($translate);
+    background: $background-front;
+}
+
+.top{
+    transform: translateY(-$translate) rotateX(90deg);
+}
+.bottom1{
+    transform: translateY($translate) rotateX(90deg) rotateY(0deg);
+    width: $translate;
+    background: $background-dark;
+    transform-origin: left;
+}
+.bottom2{
+    transform: translateY($translate) translateX($translate) rotateX(90deg) rotateY(0deg);
+    width: $translate;
+    background: $background-dark;
+    transform-origin: right;
+}
+.bottom3{
+    transform: translateY($translate) translateZ($translate) rotateX(90deg);
+    height: $translate;
+    background: $background-dark;
+    transform-origin: bottom;
+}
+.bottom4{
+    transform: translateY($box-size) translateZ(-$translate) rotateX(90deg);
+    height: $translate;
+    background: $background-dark;
+    transform-origin: top;
+}
+.open{
+    background: $background-dark;
+}
+.back{
+    transform: translateZ(-$translate);
+}
+.left{
+    transform: translateX(-$translate) rotateY(90deg);
+    background: $background-left;
+}
+.right{
+    transform: translateX($translate) rotateY(90deg);
+    background: $background-right;
+}
+
+.box.active {
+  .bottom1 {
+    animation: bottom1 1s ease forwards;
+  }
+  .bottom2 {
+    animation: bottom2 1s .5s ease forwards;
+  }
+  .bottom3 {
+    animation: bottom3 1s 1s ease forwards;
+  }
+  .bottom4 {
+    animation: bottom4 1s 1.5s ease forwards;
+  }
+}
+
+@keyframes bottom4{
+    to{
+        transform: translateY($box-size) translateZ(-$translate) rotateX(-140deg);
+    }
+}
+
+@keyframes bottom3{
+    to{
+        transform: translateY($translate) translateZ($translate) rotateX(320deg);
+    }
+}
+
+@keyframes bottom2{
+    to{
+        transform: translateY($translate) translateX($translate) rotateX(90deg) rotateY(-230deg);
+    }
+}
+
+@keyframes bottom1{
+    to{
+        transform: translateY($translate) rotateX(90deg) rotateY(230deg);
+    }
+}
+
+@keyframes movebox{
+    10%{
+        transform: translate(10px, 10px) rotateZ(5deg);
+    }
+    20%{
+        transform: translate(10px, 15px) rotateZ(-5deg);
+    }
+    30%{
+        transform: translate(-7px, 17px) rotateZ(5deg);
+    }
+    50%{
+        transform: translate(-10px, 7px) rotateZ(-5deg);
+    }
+}
+

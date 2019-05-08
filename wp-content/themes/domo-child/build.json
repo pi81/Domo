@@ -1,0 +1,13 @@
+{
+    "core": {
+        "download": {
+            "version": "5.1.1",
+            "locale": "pl_PL"
+        }
+    },
+    "plugins": {
+        "disable-gutenberg": {
+            "version": "1.8.1"
+        }
+    }
+}

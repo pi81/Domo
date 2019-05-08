@@ -1,0 +1,34 @@
+{
+  "name": "starter-front",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@git.netkata.com:netkata/starter-front.git",
+  "author": "Krzysztof Bezrąk <krzysztof@netkata.com>",
+  "license": "MIT",
+  "private": true,
+  "browserslist": [
+    "last 2 version",
+    "not dead",
+    "iOS >= 9"
+  ],
+  "devDependencies": {
+    "@netkata/webpack-configs": "^0.1.0",
+    "eslint": "5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "stylelint": "^9.10.1",
+    "stylelint-selector-bem-pattern": "^2.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "4.2.1",
+    "jquery": "^3.3.1"
+  },
+  "scripts": {
+    "start": "webpack-dev-server -d --hot",
+    "start:win": "webpack-dev-server -d --hot --watch-aggregate-timeout 300 --watch-poll 1000",
+    "build": "webpack -p",
+    "lint:js": "eslint src",
+    "lint:css": "stylelint src/scss"
+  }
+}
