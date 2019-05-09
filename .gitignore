@@ -40,5 +40,6 @@ wp-content/themes/*
 # Added automagically by WP-CLI Build (wp build-generate)
 # ------------------------------------------------------------
 !wp-content/themes/domo-child/
+!wp-content/themes/domo/
 # ------------------------------------------------------------
 # END WP-CLI BUILD BLOCK

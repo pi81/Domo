@@ -1,15 +1,15 @@
 @charset 'UTF-8';
 
-@import '0_settings/breakpoints';
+@import '0_settings/*';
 
-@import '1_tools/spacing';
+@import '1_tools/*';
 
-@import '2_generic/normalize';
+@import '2_generic/*';
 
 //@import '3_objects/*';
 
-@import '4_elements/links';
+@import '4_elements/*';
 
-@import '5_components/emoji';
+@import '5_components/*';
 
-@import '6_utilites/background-colors';
+@import '6_utilites/*';
