@@ -7,7 +7,7 @@ function my_theme_enqueue_styles() {
 function wpdocs_scripts_method() {
     wp_enqueue_script( 'custom-script', get_stylesheet_directory_uri() . '/public/main.js', array() );
 }
-add_action( 'wp_enqueue_scripts', 'wpdocs_scripts_method' )
+add_action( 'wp_enqueue_scripts', 'wpdocs_scripts_method' );
 
 // Our custom post type function
 function create_posttype() {
@@ -299,4 +299,3 @@ if( function_exists('acf_add_local_field_group') ):
     ));
 
 endif;
-?>
