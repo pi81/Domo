@@ -1,0 +1,23 @@
+//Admin panel page styles
+
+.kudobox-table {
+  margin: 0 auto;
+  max-width: 50%;
+}
+
+.kudobox-table table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.kudobox-table table {
+}
+
+.kudobox-table td, th {
+  padding: 10px;
+  text-align: center;
+}
+
+.new-kudos {
+  width: 100%;
+}
