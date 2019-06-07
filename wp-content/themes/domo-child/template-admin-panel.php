@@ -24,17 +24,23 @@ if ( is_user_logged_in() ) {
                 <td>Styczeń</td>
                 <td>*****</td>
                 <td>yes</td>
-                <td>yes</td>
+                <td>
+                    <i class="fas fa-edit"></i>
+                    <i class="fas fa-trash"></i>
+                </td>
             </tr>
             <tr>
                 <td>Luty</td>
                 <td>**********</td>
                 <td>no</td>
-                <td>yes</td>
+                <td>
+                    <i class="fas fa-edit"></i>
+                    <i class="fas fa-trash"></i>
+                </td>
             </tr>
         </table>
         <div class="new-kudos">
-            Add new kudos
+            <p><span class="cross">+ </span>Add new kudos</p>
         </div>
     </section>
    <?php
