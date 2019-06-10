@@ -4,7 +4,7 @@ function domo_enqueue_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_script( 'custom-script', get_stylesheet_directory_uri() . '/public/main.js', array() );
     //Load Font Awesome
-    wp_enqueue_style( 'fontawesome','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/fontawesome.min.css');
+    wp_enqueue_style( 'fontawesome','https://use.fontawesome.com/releases/v5.9.0/css/all.css');
 }
 
 // Our custom post type function
