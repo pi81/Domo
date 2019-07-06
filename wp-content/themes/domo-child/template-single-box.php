@@ -84,6 +84,20 @@ get_header(); ?>
             </div>
         </div>
         <!-- new domo popup end -->
+
+        <!-- popup for password -->
+        <div id="domo-pass" class="domo-pass">
+            <div class="domo-pass__group">
+                <label for="domo-pass-input">Hasło: </label>
+                <input type="text" id="domo-pass-input" name="password" placeholder="hasło">
+            </div>
+            <div class="domo-pass__group">
+                <button class="btn btn--submit domo-pass__submit">Submit</button>
+            </div>
+        </div>
+
+        <!-- popup for password end -->
+
     </section>
 
 

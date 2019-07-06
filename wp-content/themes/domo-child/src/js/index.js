@@ -20,4 +20,3 @@ $(document).ready(() => {
     const boxList = new BoxList(document.querySelector('.js-box-list'));
     boxList.init();
 });
-
