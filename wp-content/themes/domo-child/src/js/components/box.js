@@ -2,6 +2,7 @@ class Box {
     constructor(box) {
         this.box = box;
         this.domoPass =  document.querySelector('.domo-pass');
+        this.overlayPass = document.getElementById('overlay__pass');
         this.domoPassInput = document.querySelector('#domo-pass-input');
         this.domoPassSubmit = document.querySelector('.domo-pass__submit');
         this.navigation = document.querySelectorAll('.single-box__nav');
@@ -10,14 +11,18 @@ class Box {
     }
 
     getPassword() {
+        this.overlayPass.style.display = 'block';
+        this.overlayPass.style.opacity = '1';
         this.domoPass.style.display = 'block';
         this.domoPassSubmit.addEventListener('click', (e) => {
             e.preventDefault();
 
             if (this.domoPassInput.value.length === 0) {
                 console.log('podaj hasło');
+
             } else {
                 this.domoPass.style.display = 'none';
+                this.overlayPass.style.display = 'none';
 
                 if (this.box.classList.contains('active')) {
                     window.location = this.box.href;
@@ -27,7 +32,21 @@ class Box {
                 }
             }
         });
+
+        this.overlayPass.addEventListener('click', (e)=> {
+            if (this.domoPass.contains(e.target)) {
+
+            } else {
+                this.closePassword()
+            }
+        }) //close popup password on click in background
     };
+
+    closePassword() {
+        this.domoPass.style.display = 'none';
+        this.overlayPass.style.display = 'none';
+        this.overlayPass.style.opacity = '0';
+    }
 
     nav() {
         Array.from(this.navigation).forEach(nav => {

@@ -56,46 +56,53 @@ get_header(); ?>
         </div>
 
         <!-- new domo popup -->
-        <div id="domo-card__new" class="domo-card__new">
-            <div class="domo-card__new--emoticon">
-              <span class="domo-box__emoji" data-counter="1">
-                <div class="emoji  emoji--love">
-                    <div class="emoji__heart"></div>
+        <div id="domo-card__new">
+            <div id='overlay__new-card' class="overlay">
+                <div id='domo-card__new--content' class="domo-card__new--content">
+                    <div class="domo-card__new--emoticon">
+                      <span class="domo-box__emoji" data-counter="1">
+                        <div class="emoji  emoji--love">
+                        <div class="emoji__heart"></div>
+                        </div>
+                      </span>
+                    </div>
+                    <div class="domo-card__new--form-group">
+                        <label for="domo-card__new--to">Do:</label>
+                        <input type="text" id="domo-card__new--to" name="domo-card__new--to" placeholder="imię">
+                    </div>
+
+                    <div class="domo-card__new--form-group">
+                        <label for="domo-card__new--from">Od:</label>
+                        <input type="text" id="domo-card__new--from" name="domo-card__new--from" placeholder="imię">
+                    </div>
+
+                    <div class="domo-card__new--form-group">
+                        <textarea id="domo-card__new--comment" type="textarea" name="domo-card__new--comment" max-length="6000" rows="7" placeholder="napisz kilka słów za co chciałbyś podziękować"></textarea>
+                    </div>
+
+                    <div class="domo-card__new--form-group domo-card__new--form-group--btn">
+                        <button class="btn btn--save">Save changes</button>
+                        <button class="btn btn--cancel">Cancel</button>
+                    </div>
                 </div>
-              </span>
-            </div>
-            <div class="domo-card__new--form-group">
-                <label for="domo-card__new--to">Do:</label>
-                <input type="text" id="domo-card__new--to" name="domo-card__new--to" placeholder="imię">
-            </div>
-
-            <div class="domo-card__new--form-group">
-                <label for="domo-card__new--from">Od:</label>
-                <input type="text" id="domo-card__new--from" name="domo-card__new--from" placeholder="imię">
-            </div>
-
-            <div class="domo-card__new--form-group">
-                <textarea id="domo-card__new--comment" type="textarea" name="domo-card__new--comment" max-length="6000" rows="7" placeholder="napisz kilka słów za co chciałbyś podziękować"></textarea>
-            </div>
-
-            <div class="domo-card__new--form-group domo-card__new--form-group--btn">
-                <button class="btn btn--save">Save changes</button>
-                <button class="btn btn--cancel">Cancel</button>
             </div>
         </div>
         <!-- new domo popup end -->
 
         <!-- popup for password -->
-        <div id="domo-pass" class="domo-pass">
-            <div class="domo-pass__group">
-                <label for="domo-pass-input">Hasło: </label>
-                <input type="text" id="domo-pass-input" name="password" placeholder="hasło">
-            </div>
-            <div class="domo-pass__group">
-                <button class="btn btn--submit domo-pass__submit">Submit</button>
+        <div id="domo-pass">
+            <div id="overlay__pass" class="overlay">
+                <div class="domo-pass">
+                    <div class="domo-pass__group">
+                        <label for="domo-pass-input">Hasło: </label>
+                        <input type="text" id="domo-pass-input" name="password" placeholder="hasło">
+                    </div>
+                    <div class="domo-pass__group">
+                        <button class="btn btn--submit domo-pass__submit">Submit</button>
+                    </div>
+                </div>
             </div>
         </div>
-
         <!-- popup for password end -->
 
     </section>
