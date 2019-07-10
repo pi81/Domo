@@ -1,8 +1,5 @@
 <?php get_header(); ?>
 
-<?php
-if ( is_user_logged_in() ) {
-    ?>
     <section>
         <h1 class="h1">Welcome in admin panel</h1>
     </section>
@@ -38,13 +35,6 @@ if ( is_user_logged_in() ) {
             <p><span class="cross">+ </span>Add new kudos</p>
         </div>
     </section>
-   <?php
-} else {
-    echo 'Welcome, visitor!';
-}
-?>
-
-
 
 
 <?php

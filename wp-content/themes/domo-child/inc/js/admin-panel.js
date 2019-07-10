@@ -10,6 +10,7 @@
             },
         }).then(response => {
             if(!response.ok){
+                localStorage.removeItem('jwt-token');
                 window.location = data.logout_url
             }
         })
