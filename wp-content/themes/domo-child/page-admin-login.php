@@ -10,12 +10,12 @@
                 <form name="jwt-form" class="jwt-form" action="/admin-panel">
                     <div class="panel-login--form-group">
                         <label for="panel-login--email"><?= __('User name') ?></label>
-                        <input type="text" id="panel-login--email" name="log">
+                        <input type="text" id="panel-login--email" name="log" required>
                     </div>
 
                     <div class="panel-login--form-group">
                         <label for="panel-login--password">Password</label>
-                        <input type="password" id="panel-login--password" name="pwd">
+                        <input type="password" id="panel-login--password" name="pwd" required>
                     </div>
                     <div class="panel-login--form-group panel-login--form-group--btn">
                         <button type="submit" class="btn btn--sign-in"><?= __('Sign in') ?></button>

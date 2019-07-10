@@ -1,6 +1,6 @@
 (
-    () => {
-        const token = localStorage.getItem('jwt-token');
+    function(){
+        var token = localStorage.getItem('jwt-token');
         fetch('/wp-json/jwt-auth/v1/token/validate',{
             method: "post",
             headers: {
