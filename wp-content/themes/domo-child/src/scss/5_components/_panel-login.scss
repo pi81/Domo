@@ -11,7 +11,7 @@
   border: 2px solid grey;
   border-radius: 8px;
   padding: 20px;
-  width: 500px;
+  width: 600px;
 }
 
 .panel-login__title {
@@ -37,10 +37,31 @@
 }
 
 .panel-login--form-group--btn {
-  margin-left: 150px;
+  text-align: right;
+  margin-right: 90px;
 }
 
 .btn--sign-in:hover {
   cursor: pointer;
   transform: scale(1.1, 1.1);
+}
+
+.jwt-form {
+  .message {
+    color: $red-color;
+    text-align: center;
+    display: none;
+  }
+
+  &.error-not-response {
+    .message--not-response{
+      display: block;
+    }
+  }
+
+  &.error-validation {
+    .message--validation{
+      display: block;
+    }
+  }
 }

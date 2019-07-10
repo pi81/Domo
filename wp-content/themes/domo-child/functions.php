@@ -1,20 +1,30 @@
 <?php
-add_action( 'wp_enqueue_scripts', 'domo_enqueue_styles' );
-function domo_enqueue_styles() {
-    wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-    wp_enqueue_script( 'custom-script', get_stylesheet_directory_uri() . '/public/main.js', array() );
+add_action('wp_enqueue_scripts', 'domo_enqueue_styles');
+function domo_enqueue_styles()
+{
+    wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
+    wp_enqueue_script('custom-script', get_stylesheet_directory_uri() . '/public/main.js', array());
     //Load Font Awesome
-    wp_enqueue_style( 'fontawesome','https://use.fontawesome.com/releases/v5.9.0/css/all.css');
+    wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.9.0/css/all.css');
+
+    if (is_page('admin-panel')) {
+        wp_register_script('admin-panel', get_stylesheet_directory_uri() . '/inc/js/admin-panel.js', [], '1.0', false);
+        wp_localize_script( 'admin-panel', 'data', [
+            'logout_url' => wp_logout_url('/admin-login')
+        ] );
+        wp_enqueue_script('admin-panel');
+    };
 }
 
 // Our custom post type function
-function create_posttype() {
+function create_posttype()
+{
 
-    register_post_type( 'Emoji',
+    register_post_type('Emoji',
         // CPT Options
         array(
             'labels' => array(
-                'name' => __( 'Emoji' ),
+                'name' => __('Emoji'),
             ),
             'public' => true,
             'has_archive' => true,
@@ -22,11 +32,11 @@ function create_posttype() {
         )
     );
 
-    register_post_type( 'Boxes',
+    register_post_type('Boxes',
         // CPT Options
         array(
             'labels' => array(
-                'name' => __( 'Boxes', 'cpt' ),
+                'name' => __('Boxes', 'cpt'),
             ),
             'public' => true,
             'has_archive' => true,
@@ -34,11 +44,11 @@ function create_posttype() {
         )
     );
 
-    register_post_type( 'Cards',
+    register_post_type('Cards',
         // CPT Options
         array(
             'labels' => array(
-                'name' => __( 'Cards', 'cpt' ),
+                'name' => __('Cards', 'cpt'),
             ),
             'public' => true,
             'has_archive' => true,
@@ -46,11 +56,12 @@ function create_posttype() {
         )
     );
 }
+
 // Hooking up our function to theme setup
-add_action( 'init', 'create_posttype' );
+add_action('init', 'create_posttype');
 
 
-if( function_exists('acf_add_local_field_group') ):
+if (function_exists('acf_add_local_field_group')):
 
     acf_add_local_field_group(array(
         'key' => 'group_5cd4248c1c150',
