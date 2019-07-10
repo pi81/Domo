@@ -19,9 +19,9 @@
                     </div>
                     <div class="panel-login--form-group panel-login--form-group--btn">
                         <button type="submit" class="btn btn--sign-in"><?= __('Sign in') ?></button>
-                        <p class="message message--not-response"><?= __('Sorry, but there is some problem, try again later') ?></p>
-                        <p class="message message--validation js-error"></p>
                     </div>
+                    <p class="message message--not-response"><?= __('Sorry, but there is some problem, try again later') ?></p>
+                    <p class="message message--validation js-error"></p>
                 </form>
             </div>
         </div>

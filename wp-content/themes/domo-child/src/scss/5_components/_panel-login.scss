@@ -11,7 +11,7 @@
   border: 2px solid grey;
   border-radius: 8px;
   padding: 20px;
-  width: 500px;
+  width: 600px;
 }
 
 .panel-login__title {
@@ -49,6 +49,7 @@
 .jwt-form {
   .message {
     color: $red-color;
+    text-align: center;
     display: none;
   }
 
