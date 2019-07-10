@@ -3,6 +3,7 @@ import $ from 'jquery';
 import Modal from './components/modal';
 import Box from './components/box';
 import BoxList from './components/box-list';
+import JwtForm from './components/jwt-form';
 
 $(document).ready(() => {
     /* jsons for other boxes
@@ -19,5 +20,8 @@ $(document).ready(() => {
 
     const boxList = new BoxList(document.querySelector('.js-box-list'));
     boxList.init();
+
+    const jwtForm = new JwtForm('jwt-form');
+    jwtForm.init();
 });
 

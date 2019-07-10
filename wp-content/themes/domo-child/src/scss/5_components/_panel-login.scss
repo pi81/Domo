@@ -37,10 +37,30 @@
 }
 
 .panel-login--form-group--btn {
-  margin-left: 150px;
+  text-align: right;
+  margin-right: 90px;
 }
 
 .btn--sign-in:hover {
   cursor: pointer;
   transform: scale(1.1, 1.1);
+}
+
+.jwt-form {
+  .message {
+    color: $red-color;
+    display: none;
+  }
+
+  &.error-not-response {
+    .message--not-response{
+      display: block;
+    }
+  }
+
+  &.error-validation {
+    .message--validation{
+      display: block;
+    }
+  }
 }

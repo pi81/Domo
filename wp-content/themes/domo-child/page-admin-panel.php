@@ -1,9 +1,4 @@
-<?php
-/**
- * Template Name: Admin panel
- **/
-
-get_header(); ?>
+<?php get_header(); ?>
 
 <?php
 if ( is_user_logged_in() ) {
