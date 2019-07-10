@@ -24,4 +24,3 @@ $(document).ready(() => {
     const jwtForm = new JwtForm('jwt-form');
     jwtForm.init();
 });
-

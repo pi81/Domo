@@ -1,20 +1,30 @@
 class Modal {
     constructor(btnNewDomo) {
         this.btnNewDomo = btnNewDomo;
-        this.domoNewCard = document.getElementById('domo-card__new');
+        this.overlayNewCard = document.getElementById('overlay__new-card');
         this.cancelNewDomo = document.querySelector('.btn--cancel');
+        this.domoNew = document.getElementById('domo-card__new--content');
     }
 
     openModal() {
-        this.domoNewCard.style.display = 'block';
+        this.overlayNewCard.style.display = 'block';
+        this.overlayNewCard.style.opacity = '1';
         this.cancelNewDomo.addEventListener('click', (e) => {
             e.preventDefault();
             this.closeModal();
         });
+        this.overlayNewCard.addEventListener('click', (e)=> {
+            if (this.domoNew.contains(e.target)) {
+
+            } else {
+                this.closeModal();
+            }
+        })
     }
 
     closeModal() {
-        this.domoNewCard.style.display = 'none';
+        this.overlayNewCard.style.display = 'none';
+        this.overlayNewCard.style.opacity = '0';
     }
 
     events() {
