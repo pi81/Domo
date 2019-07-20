@@ -1,5 +1,9 @@
 <?php
 add_action('wp_enqueue_scripts', 'domo_enqueue_styles');
+
+//var_dump(wp_get_nav_menu_items( 'primary-menu')[0]);
+
+
 function domo_enqueue_styles()
 {
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
@@ -8,12 +12,16 @@ function domo_enqueue_styles()
     wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.9.0/css/all.css');
 
     if (is_page('admin-panel')) {
-        wp_register_script('admin-panel', get_stylesheet_directory_uri() . '/inc/js/admin-panel.js', [], '1.0', false);
-        wp_localize_script( 'admin-panel', 'data', [
-            'logout_url' => wp_logout_url('/admin-login')
-        ] );
+        wp_register_script('admin-panel', get_stylesheet_directory_uri() . '/public/admin.js', [], '1.0', false);
+        wp_localize_script('admin-panel', 'data', [
+            'logout_url' => wp_logout_url('/admin-login'),
+        ]);
         wp_enqueue_script('admin-panel');
-    };
+    }
+    if (!is_page('admin-panel')) {
+        wp_register_script('jwt', get_stylesheet_directory_uri() . '/public/jwt.js', ['jquery'], '1.0', true);
+        wp_enqueue_script('jwt');
+    }
 }
 
 // Our custom post type function

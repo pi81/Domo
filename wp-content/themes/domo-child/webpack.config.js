@@ -19,10 +19,15 @@ module.exports = (_env, argv) => {
                 jquery: 'internal',
             },
         },
+        entry:{
+          'main':  path.resolve(__dirname, 'src/index.js'),
+          'jwt':  path.resolve(__dirname, 'src/jwt.js'),
+          'admin':  path.resolve(__dirname, 'src/admin-panel.js'),
+        },
 
         output: {
             path: path.resolve(__dirname, 'public'),
-            filename: 'main.js',
+            filename: '[name].js',
         },
 
         resolve: {
